@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1</title>
+
+    <!-- stylesheets links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/alertifyjs/css/alertify.css">
+    <link rel="stylesheet" href="css/alertifyjs/css/themes/default.css">
+
+    <link rel="stylesheet" href="css/step2.css">
+
+</head>
+
+<body>
+
+    <div class="outer-game-container">
+
+        <div class="start-game-container">
+            <span onclick="runGame();">start</span>
+        </div>
+        <div class="inner-game-container">
+
+            <div class="beams top-beam">
+                <!-- <div class="row"> -->
+                <div class="game-page-title">
+                    <h1>Mufasa & Scar</h1>
+                    <div id="vertical-div-bar"></div>
+                    <small><span>the variant</span></small>
+                </div>
+                <!-- </div> -->
+            </div>
+
+            <div class="middle-beam">
+
+                <div class="game-map-container">
+
+                    <!-- game board/map -->
+                    <div id="game-board-map"></div>
+
+                </div>
+            </div>
+
+            <div class="beams bottom-beam">
+
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5">
+                        <div class="score-card active-player" id="player-mufasa">
+                            <div><img src="images/players/mufasa-x200.png" alt="mufasa image" class="player-image"></div>
+                            <div class="score-card-details">
+                                <div id="player-mufasa-state" class="player-state"></div>
+                                <span>Player :</span>&nbsp;&nbsp;<span class="player-name"></span><br/>
+                                <span>Points :</span>&nbsp;&nbsp;<span class="player-score"></span><br/>
+                                <span>Weapon Weight :</span>&nbsp;&nbsp;<span class="weapon-weight"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 score-board">
+                        <h3>Score Board</h3>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5">
+                        <div class="score-card scar" id="player-scar">
+                            <div><img src="images/players/scar-x200.png" alt="scar image" class="player-image scar"></div>
+                            <div class="score-card-details">
+                                <div id="player-scar-state" class="player-state"></div>
+                                <span>Player :</span>&nbsp;&nbsp;<span class="player-name"></span><br/>
+                                <span>Points :</span>&nbsp;&nbsp;<span class="player-score"></span><br/>
+                                <span>Weapon Weight :</span>&nbsp;&nbsp;<span class="weapon-weight"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/alertifyjs/alertify.min.js"></script>
+
+    <script src="js/step2.js"></script>
+
+</body>
+
+</html>
+<!-- logo url logomakr.com/17eZOf -->

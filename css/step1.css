@@ -1,0 +1,151 @@
+.outer-game-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    padding: 20px 0 20px 0;
+}
+
+.inner-game-container {
+    width: 90%;
+    height: 100%;
+    position: relative;
+    /* background-color: gray; */
+    margin: auto;
+    padding: 0px;
+    z-index: 1;
+}
+
+.beams {
+    width: 100%;
+    min-width: 100%;
+    margin: auto;
+    background-color: #263b45;
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.top-beam {
+    top: 0px;
+    min-height: 10%;
+    max-height: 10%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.middle-beam {
+    min-width: 80%;
+    /* background-color: darkgoldenrod; */
+    display: flex;
+    margin: auto;
+    height: 70%;
+}
+
+.bottom-beam {
+    bottom: 0px;
+    margin-bottom: 0px;
+    min-height: 20%;
+    max-height: 20%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.game-map-container {
+    border-radius: 10px;
+    min-width: 95%;
+    max-width: 95%;
+    background-color: #ffffff;
+    min-height: 110%;
+    max-height: 115%;
+    z-index: 3;
+    display: flex;
+    position: relative;
+    margin: auto;
+    top: -15px;
+    padding: 15px;
+    border: #263b45 3px solid;
+    /* overflow: hidden; */
+}
+
+#game-board-map {
+    border: 2px sloid black;
+    border-radius: 7px;
+    display: grid;
+    position: relative;
+    /* grid-template: repeat(10, 1fr)/ repeat(10, 1fr); */
+    grid-template-columns: repeat(10, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr)); */
+    grid-gap: 1px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 110%;
+    text-align: center;
+    /* width: 100%;
+    background-color: red;
+    z-index: 4;
+    margin: auto;
+    text-align: center;
+    min-height: 110%;
+    max-height: 115%; */
+}
+
+#game-board-map .map-box {
+    outline: 1px solid rgba(152, 153, 152, 0.3);
+    border-radius: 7px;
+    /* margin: auto; */
+    /* width: 5em; */
+    /* height: 3em; */
+    /* width: 75px;
+    height: 72px;
+    float: left;
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: blue;
+    outline: 1px solid #ffffff; */
+}
+
+.magic-box,
+.map-box,
+.player-state {
+    background: no-repeat center;
+}
+
+
+/* @media (min-width: 580px) and (max-width: 768px) {
+    #game-board-map {
+        grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
+    }
+} */
+
+
+/* @media (min-width: 480px) and (max-width: 579px) {
+    #game-board-map {
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    }
+    .game-map-container {
+        max-height: 120%;
+    }
+} */
+
+
+/* @media (min-width: 240px) and (max-width: 479px) {
+    #game-board-map {
+        grid-template-columns: repeat(auto-fit, minmax(4.9rem, 1fr));
+    }
+} */
+
+
+/* @media (min-width: 200px) {
+    #game-board-map {
+        grid-template-columns: repeat(auto-fit, minmax(1.295rem, 1fr));
+    }
+    .game-map-container {
+        max-height: 120%;
+    }
+} */
+
+@media (min-width: 240px) {}
